@@ -63,7 +63,7 @@ public class stepDefinationImplementation extends BaseTest
 	}
 	
 	@Then("{string} error message displayed")
-	public void validate_ErrorMessage(String string)
+	public void validate_ErrorMessage(String string) throws InterruptedException
 	{
 		Assert.assertEquals(string, landingPage.getErrorMessage());
         driver.close();

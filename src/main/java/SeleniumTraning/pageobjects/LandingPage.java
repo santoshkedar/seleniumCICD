@@ -39,7 +39,7 @@ public class LandingPage extends Abstractcomponent
 		return cataLouge;
 	}
 	
-	public String getErrorMessage()
+	public String getErrorMessage() throws InterruptedException
 	{
 		waitForVisibilityOfElement(errorMessage);
 		return errorMessage.getText();
