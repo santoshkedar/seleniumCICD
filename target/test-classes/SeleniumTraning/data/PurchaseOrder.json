@@ -1,0 +1,14 @@
+[
+{ 
+ "email":"santosh@gmail.com",
+ "password":"S@ntosh1",
+ "productName":"ADIDAS ORIGINAL",
+ "validateProductName":"ADIDAS ORIGINAL"
+},
+	
+{"email":"kedar@gmail.com",
+ "password":"Kedar!23",
+ "productName":"IPHONE 13 PRO",
+ "validateProductName":"IPHONE 13 PRO"
+} 
+]
