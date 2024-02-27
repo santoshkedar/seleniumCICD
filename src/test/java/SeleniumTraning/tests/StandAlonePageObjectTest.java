@@ -19,6 +19,7 @@ public class StandAlonePageObjectTest extends BaseTest
 {
 	//String productName="ADIDAS ORIGINAL";
 	//Changed code for CICD
+	//Changed code for CICD2
 	
 	@Test(dataProvider="getData", groups= {"Purchase"})
 	public void submitOrder(HashMap <String,String> input) throws IOException, InterruptedException
