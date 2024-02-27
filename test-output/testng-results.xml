@@ -1,47 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-14T02:45:18 CST" name="Default suite" finished-at="2024-02-14T02:45:40 CST" duration-ms="21984">
+  <suite started-at="2024-02-27T02:36:09 CST" name="Suite" finished-at="2024-02-27T02:37:04 CST" duration-ms="54862">
     <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@710c2b53]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
+      <group name="Purchase">
+        <method signature="StandAlonePageObjectTest.submitOrder(java.util.HashMap)[pri:0, instance:SeleniumTraning.tests.StandAlonePageObjectTest@6ed3f258]" name="submitOrder" class="SeleniumTraning.tests.StandAlonePageObjectTest"/>
+      </group> <!-- Purchase -->
     </groups>
-    <test started-at="2024-02-14T02:45:18 CST" name="Default test" finished-at="2024-02-14T02:45:40 CST" duration-ms="21984">
-      <class name="cucumber.TestNGTestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumber.TestNGTestRunner@710c2b53]" started-at="2024-02-14T02:45:18 CST" name="setUpClass" finished-at="2024-02-14T02:45:18 CST" duration-ms="211" status="PASS">
+    <test started-at="2024-02-27T02:36:09 CST" name="Error Validation Test" finished-at="2024-02-27T02:36:35 CST" duration-ms="25859">
+      <class name="SeleniumTraning.tests.errorValidationLoginPageTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:SeleniumTraning.tests.errorValidationLoginPageTest@5dd1c9f2]" started-at="2024-02-27T02:36:09 CST" name="launchApplication" finished-at="2024-02-27T02:36:15 CST" duration-ms="5883" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="LoginErrorValidation()[pri:0, instance:SeleniumTraning.tests.errorValidationLoginPageTest@5dd1c9f2]" started-at="2024-02-27T02:36:15 CST" name="LoginErrorValidation" finished-at="2024-02-27T02:36:16 CST" duration-ms="1050" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SeleniumTraning.tests.errorValidationLoginPageTest@5dd1c9f2]" started-at="2024-02-27T02:36:16 CST" name="tearDown" finished-at="2024-02-27T02:36:17 CST" duration-ms="111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:SeleniumTraning.tests.errorValidationLoginPageTest@5dd1c9f2]" started-at="2024-02-27T02:36:17 CST" name="launchApplication" finished-at="2024-02-27T02:36:21 CST" duration-ms="4239" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="productErrorValidation()[pri:0, instance:SeleniumTraning.tests.errorValidationLoginPageTest@5dd1c9f2]" started-at="2024-02-27T02:36:21 CST" name="productErrorValidation" finished-at="2024-02-27T02:36:35 CST" duration-ms="14493" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SeleniumTraning.tests.errorValidationLoginPageTest@5dd1c9f2]" started-at="2024-02-27T02:36:35 CST" name="tearDown" finished-at="2024-02-27T02:36:35 CST" duration-ms="64" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- SeleniumTraning.tests.errorValidationLoginPageTest -->
+    </test> <!-- Error Validation Test -->
+    <test started-at="2024-02-27T02:36:09 CST" name="Submit Order Test" finished-at="2024-02-27T02:37:04 CST" duration-ms="54862">
+      <class name="SeleniumTraning.tests.StandAlonePageObjectTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:SeleniumTraning.tests.StandAlonePageObjectTest@6ed3f258]" started-at="2024-02-27T02:36:10 CST" name="launchApplication" finished-at="2024-02-27T02:36:16 CST" duration-ms="6887" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:SeleniumTraning.tests.StandAlonePageObjectTest@6ed3f258]" started-at="2024-02-27T02:36:16 CST" name="submitOrder" data-provider="getData" finished-at="2024-02-27T02:36:32 CST" duration-ms="15799" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@565aa4ac]]>
+                <![CDATA[{password=S@ntosh1, validateProductName=ADIDAS ORIGINAL, email=santosh@gmail.com, productName=ADIDAS ORIGINAL}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@710c2b53]" started-at="2024-02-14T02:45:18 CST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-14T02:45:40 CST" duration-ms="21742" status="PASS">
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SeleniumTraning.tests.StandAlonePageObjectTest@6ed3f258]" started-at="2024-02-27T02:36:32 CST" name="tearDown" finished-at="2024-02-27T02:36:32 CST" duration-ms="112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:SeleniumTraning.tests.StandAlonePageObjectTest@6ed3f258]" started-at="2024-02-27T02:36:32 CST" name="launchApplication" finished-at="2024-02-27T02:36:37 CST" duration-ms="4977" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:SeleniumTraning.tests.StandAlonePageObjectTest@6ed3f258]" started-at="2024-02-27T02:36:37 CST" name="submitOrder" data-provider="getData" finished-at="2024-02-27T02:36:53 CST" duration-ms="15688" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Positive Test for submit order test"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Purchase the order from the Ecommerese Website"]]>
+                <![CDATA[{password=Kedar!23, validateProductName=IPHONE 13 PRO, email=kedar@gmail.com, productName=IPHONE 13 PRO}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumber.TestNGTestRunner@710c2b53]" started-at="2024-02-14T02:45:40 CST" name="tearDownClass" finished-at="2024-02-14T02:45:40 CST" duration-ms="16" status="PASS">
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SeleniumTraning.tests.StandAlonePageObjectTest@6ed3f258]" started-at="2024-02-27T02:36:53 CST" name="tearDown" finished-at="2024-02-27T02:36:53 CST" duration-ms="69" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- cucumber.TestNGTestRunner -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:SeleniumTraning.tests.StandAlonePageObjectTest@6ed3f258]" started-at="2024-02-27T02:36:53 CST" name="launchApplication" finished-at="2024-02-27T02:36:57 CST" duration-ms="4405" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="purchaseOrderValidation(java.util.HashMap)[pri:0, instance:SeleniumTraning.tests.StandAlonePageObjectTest@6ed3f258]" started-at="2024-02-27T02:36:57 CST" name="purchaseOrderValidation" data-provider="getData" finished-at="2024-02-27T02:36:58 CST" depends-on-methods="SeleniumTraning.tests.StandAlonePageObjectTest.submitOrder" duration-ms="872" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=S@ntosh1, validateProductName=ADIDAS ORIGINAL, email=santosh@gmail.com, productName=ADIDAS ORIGINAL}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- purchaseOrderValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SeleniumTraning.tests.StandAlonePageObjectTest@6ed3f258]" started-at="2024-02-27T02:36:58 CST" name="tearDown" finished-at="2024-02-27T02:36:58 CST" duration-ms="125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:SeleniumTraning.tests.StandAlonePageObjectTest@6ed3f258]" started-at="2024-02-27T02:36:58 CST" name="launchApplication" finished-at="2024-02-27T02:37:03 CST" duration-ms="4827" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="purchaseOrderValidation(java.util.HashMap)[pri:0, instance:SeleniumTraning.tests.StandAlonePageObjectTest@6ed3f258]" started-at="2024-02-27T02:37:03 CST" name="purchaseOrderValidation" data-provider="getData" finished-at="2024-02-27T02:37:04 CST" depends-on-methods="SeleniumTraning.tests.StandAlonePageObjectTest.submitOrder" duration-ms="889" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Kedar!23, validateProductName=IPHONE 13 PRO, email=kedar@gmail.com, productName=IPHONE 13 PRO}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- purchaseOrderValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SeleniumTraning.tests.StandAlonePageObjectTest@6ed3f258]" started-at="2024-02-27T02:37:04 CST" name="tearDown" finished-at="2024-02-27T02:37:04 CST" duration-ms="113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- SeleniumTraning.tests.StandAlonePageObjectTest -->
+    </test> <!-- Submit Order Test -->
+  </suite> <!-- Suite -->
 </testng-results>
