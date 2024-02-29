@@ -39,6 +39,7 @@ public class ProductCatalogue extends Abstractcomponent
 	public List<WebElement> getProductList()
 	{	
 		waitForElementToLocate(productsBy);
+		System.out.println("waitForElementToLocate executed from getProductList Method");
 		return products;
 		//List<WebElement> products= driver.findElements(By.cssSelector(".mb-3"));
 	}
@@ -57,8 +58,11 @@ public class ProductCatalogue extends Abstractcomponent
 		prod.findElement(addToCart).click();
 		
 		waitForElementToLocate(toastMessage);
+		System.out.println("waitForElementToLocate executed from addToCart Method");
 		waitForVisibilityOfElement(spinner);
+		System.out.println("waitForVisibilityOfElement");
 		waitForInvisibilityOfElement(spinner);
+		System.out.println("waitForInvisibilityOfElement");
 	}
 		
 }

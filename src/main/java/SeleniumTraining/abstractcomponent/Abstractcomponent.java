@@ -33,6 +33,7 @@ public class Abstractcomponent
 		{
 			WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(15));
 			wait.until(ExpectedConditions.visibilityOfElementLocated(Findby));
+			System.out.println("waitForElementToLocate executed");
 		}
 	
 	public void waitForVisibilityOfElement(WebElement ele) throws InterruptedException
@@ -40,12 +41,14 @@ public class Abstractcomponent
 		
 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(15));
 		wait.until(ExpectedConditions.visibilityOf(ele));
+		System.out.println("waitForVisibilityOfElement");
 	}
 	
 	public void waitForInvisibilityOfElement(WebElement ele) throws InterruptedException
 	{
 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(15));
 		wait.until(ExpectedConditions.invisibilityOf(ele));
+		System.out.println("waitForInvisibilityOfElement");
 	}
 	
 	public validateCart goToCartPage()
