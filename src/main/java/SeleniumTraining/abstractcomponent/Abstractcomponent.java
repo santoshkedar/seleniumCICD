@@ -41,7 +41,7 @@ public class Abstractcomponent
 		
 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(15));
 		wait.until(ExpectedConditions.visibilityOf(ele));
-		System.out.println("waitForVisibilityOfElement");
+		System.out.println("waitForVisibilityOfElement ");
 	}
 	
 	public void waitForInvisibilityOfElement(WebElement ele) throws InterruptedException
