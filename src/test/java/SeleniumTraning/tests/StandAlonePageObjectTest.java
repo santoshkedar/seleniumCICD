@@ -28,10 +28,9 @@ public class StandAlonePageObjectTest extends BaseTest
 		String country="India";
 	
 		ProductCatalogue cataLouge = landingPage.loginToApplication(input.get("email"), input.get("password"));
-		cataLouge.getProductList();
+		//cataLouge.getProductList();
 		cataLouge.addToCart(input.get("productName"));
 		//cataLouge.addToCart(productName2);
-		
 		
 		validateCart cart = cataLouge.goToCartPage();
 		boolean match = cart.validateCartproducts(input.get("productName"));
