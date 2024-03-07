@@ -3,7 +3,7 @@
 <suite parallel="tests" name="Suite">
   <test thread-count="5" name="Submit Order Test">
     <classes>
-        <class name="SeleniumTraning.tests.StandAlonePageObjectTest"/>
+        <class name="SeleniumTraning.tests.EcommerceApplicationTests"/>
      </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

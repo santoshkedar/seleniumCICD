@@ -2,17 +2,10 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite parallel="tests" name="Suite">
 
-<groups>
-		<run>
-		<include name="ErrorHandling"/>
-		</run>
-</groups>
-  <test thread-count="5" name="Submit Order Test">
-    <classes>
-        <class name="SeleniumTraning.tests.StandAlonePageObjectTest"/>
-     </classes>
-  </test> <!-- Test -->
-  
+<listeners>
+<listener class-name="SelenumTraning.testcomponents.Listeners"/>
+</listeners>
+
    <test thread-count="5" name="Error Validation Test">
     <classes>
       <class name="SeleniumTraning.tests.errorValidationLoginPageTest"/>

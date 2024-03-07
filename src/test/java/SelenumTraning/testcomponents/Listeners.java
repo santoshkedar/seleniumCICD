@@ -35,14 +35,19 @@ public class Listeners extends BaseTest implements ITestListener
 	@Override
 	public void onTestFailure(ITestResult result) 
 	{
+		
+		extentTest.get().log(Status.FAIL, "Test is Failed");
+		
 		extentTest.get().fail(result.getThrowable());
 		
+		System.out.println(result.getTestName());
+				
 		try {
-			driver=  (WebDriver) result.getTestClass().getRealClass().getField("driver")
-					.get(result.getInstance());
+			driver=  (WebDriver) result.getTestClass().getRealClass().getField("driver").get(result.getInstance());
 		} catch (Exception e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
+			System.out.println("I was here 1");
 		} 
 		
 		String filepath = null;
@@ -51,6 +56,7 @@ public class Listeners extends BaseTest implements ITestListener
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			System.out.println("I was here 2");
 		}
 
 		extentTest.get().addScreenCaptureFromPath(filepath, result.getMethod().getMethodName());

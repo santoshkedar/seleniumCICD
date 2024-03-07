@@ -6,10 +6,10 @@
 <listener class-name="SelenumTraning.testcomponents.Listeners"/>
 </listeners>
 
-  <test thread-count="5" name="Submit Order Test">
+  <test thread-count="5" name="File Upload/Download Test">
     <classes>
-        <class name="SeleniumTraning.tests.EcommerceApplicationTests"/>
+      <class name="SeleniumTraning.tests.FileUploadDownload"/>
      </classes>
   </test> <!-- Test -->
-    
+  
 </suite> <!-- Suite -->

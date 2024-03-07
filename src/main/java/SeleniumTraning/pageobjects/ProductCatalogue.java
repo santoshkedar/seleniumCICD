@@ -27,8 +27,6 @@ public class ProductCatalogue extends Abstractcomponent
 	@FindBy(css=".ng-animating")
 	WebElement spinner;
 	
-	
-	
 	By productsBy = By.cssSelector(".mb-3");
 	By productValue=By.cssSelector("b");
 	By addToCart =By.className("w-10");
@@ -39,7 +37,7 @@ public class ProductCatalogue extends Abstractcomponent
 	public List<WebElement> getProductList()
 	{	
 		waitForElementToLocate(productsBy);
-		System.out.println("waitForElementToLocate executed from getProductList Method");
+		System.out.println(products.size());
 		return products;
 		//List<WebElement> products= driver.findElements(By.cssSelector(".mb-3"));
 	}

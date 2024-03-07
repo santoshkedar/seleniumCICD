@@ -15,7 +15,7 @@ import SeleniumTraning.pageobjects.validateCart;
 import SeleniumTraning.pageobjects.validateOderPage;
 import SelenumTraning.testcomponents.BaseTest;
 
-public class StandAlonePageObjectTest extends BaseTest
+public class EcommerceApplicationTests extends BaseTest
 {
 	//String productName="ADIDAS ORIGINAL";
 	//Changed code for CICD

@@ -4,27 +4,13 @@
   <listeners>
     <listener class-name="SelenumTraning.testcomponents.Listeners"/>
   </listeners>
-  <test thread-count="5" parallel="tests" name="Submit Order Test(failed)">
+  <test thread-count="5" parallel="tests" name="File Upload/Download Test(failed)">
     <classes>
-      <class name="SeleniumTraning.tests.StandAlonePageObjectTest">
+      <class name="SeleniumTraning.tests.FileUploadDownload">
         <methods>
-          <include name="launchApplication"/>
-          <include name="purchaseOrderValidation"/>
-          <include name="tearDown"/>
-          <include name="submitOrder" invocation-numbers="1"/>
+          <include name="fileUploadTestCase"/>
         </methods>
-      </class> <!-- SeleniumTraning.tests.StandAlonePageObjectTest -->
+      </class> <!-- SeleniumTraning.tests.FileUploadDownload -->
     </classes>
-  </test> <!-- Submit Order Test(failed) -->
-  <test thread-count="5" parallel="tests" name="Error Validation Test(failed)">
-    <classes>
-      <class name="SeleniumTraning.tests.errorValidationLoginPageTest">
-        <methods>
-          <include name="launchApplication"/>
-          <include name="tearDown"/>
-          <include name="LoginErrorValidation"/>
-        </methods>
-      </class> <!-- SeleniumTraning.tests.errorValidationLoginPageTest -->
-    </classes>
-  </test> <!-- Error Validation Test(failed) -->
+  </test> <!-- File Upload/Download Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
