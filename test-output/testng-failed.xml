@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="SeleniumTraning.tests.FileUploadDownload">
+      <class name="SeleniumTraning.tests.CDPToolsTest">
         <methods>
-          <include name="fileUploadTestCase"/>
+          <include name="ConsoleLogsCapture"/>
         </methods>
-      </class> <!-- SeleniumTraning.tests.FileUploadDownload -->
+      </class> <!-- SeleniumTraning.tests.CDPToolsTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

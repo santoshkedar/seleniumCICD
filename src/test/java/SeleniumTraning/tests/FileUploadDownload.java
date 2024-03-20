@@ -33,7 +33,7 @@ public class FileUploadDownload extends ExcelFunctions
 		
 		FileUploadDownlaodPageObject.launchURL();
 		
-		String beforeUploadValue = FileUploadDownlaodPageObject.getItemValue(item);
+		FileUploadDownlaodPageObject.getItemValue(item);
 		
 		//File Download
 		FileUploadDownlaodPageObject.fileDownload();

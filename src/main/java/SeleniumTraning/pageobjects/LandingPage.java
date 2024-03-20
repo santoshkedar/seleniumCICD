@@ -10,6 +10,7 @@ import SeleniumTraining.abstractcomponent.Abstractcomponent;
 public class LandingPage extends Abstractcomponent
 {
 	WebDriver driver;
+	int count=0;
 	
 	public LandingPage(WebDriver driver)
 	{
@@ -36,6 +37,8 @@ public class LandingPage extends Abstractcomponent
 		password.sendKeys(pass);
 		submit.click();
 		ProductCatalogue cataLouge = new ProductCatalogue(driver);
+		count++;
+		System.out.println(count);
 		return cataLouge;
 	}
 	
